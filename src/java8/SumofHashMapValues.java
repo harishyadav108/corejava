@@ -13,7 +13,7 @@ public class SumofHashMapValues {
         myMap.put("d",4);
         myMap.put("e",5);
 
-        int sum = myMap.values().stream().reduce(0, Integer::sum);
-        System.out.println(sum);
+       int i = myMap.values().stream().reduce(Integer::sum).get();
+        System.out.println(i);
     }
 }
